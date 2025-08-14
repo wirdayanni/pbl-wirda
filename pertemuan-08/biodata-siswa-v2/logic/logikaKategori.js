@@ -5,7 +5,7 @@ function keteranganLulus(i){
     if(dataSiswa[i].tahun_lulus<2019){
          return"Lulus sebelum covid"
 
-    } else if(dataSiswa[i].tahun_lulus>=2019 && dataSiswa[i].tahu_lulus<=2021){
+    } else if(dataSiswa[i].tahun_lulus>=2019 && dataSiswa[i].tahun_lulus<=2021){
          return "Lulus saat covid"
         
     }else { 
