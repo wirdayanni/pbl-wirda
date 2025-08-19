@@ -40,7 +40,7 @@ class Rabbit extends Animal {
         super(name, age, true);
     }
     eat() {
-       console.log(`${this.name} sedang makan`);
+       console.log(`${this.name} sedang makan!`);
     }
 }
 
@@ -49,7 +49,7 @@ class Eagle extends Animal {
         super(name, age, false);
     }
     fly() {
-        console.log(`${this.name} sedang terbang`);
+        console.log(`${this.name} sedang terbang!`);
     }
 }
 
