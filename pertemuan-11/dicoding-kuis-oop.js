@@ -53,6 +53,7 @@ class Eagle extends Animal {
     }
 }
 
+// instance
 const myRabbit = new Rabbit('Labi', 2);
 const myEagle = new Eagle('Elo', 4);
 
