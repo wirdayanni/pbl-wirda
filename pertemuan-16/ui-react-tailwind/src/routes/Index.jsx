@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import Navbar from '../components/Navbar';
 import DataPeserta from '../pages/peserta/DataPeserta';
@@ -29,20 +29,9 @@ export default function App() {
     }
   };
 
-  function NoMatch() {
     return (
-      <div>
-        <h2>Nothing to see here!</h2>
-        <p>
-          <Link to="/">Go to the home page</Link>
-        </p>
-      </div>
-    );
-  }
-
-  return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar/>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -59,3 +48,14 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+function NoMatch() {
+    return (
+      <div>
+        <h2>Nothing to see here!</h2>
+        <p>
+          <Link to="/">Go to the home page</Link>
+        </p>
+      </div>
+    );
+  }
