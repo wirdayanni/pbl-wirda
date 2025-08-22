@@ -57,10 +57,17 @@ button {
     font-size: 1rem;
     font-weight: bold;
     background-color: #16a34a;
+    color: white;
     cursor: pointer;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #15803d;
+    color: black;
+}
+
+p.form-text {
+    justify-items: center;
 }
